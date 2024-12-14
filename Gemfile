@@ -47,3 +47,7 @@ group :development, :test do
 end
 
 gem "uuid7", "~> 0.2.0"
+gem 'jsonapi-rb'
+gem 'devise'
+gem 'doorkeeper'
+gem 'doorkeeper-jwt'
