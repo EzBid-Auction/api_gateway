@@ -38,3 +38,5 @@
 /config/deploy.yml
 /log
 /script
+
+.idea
