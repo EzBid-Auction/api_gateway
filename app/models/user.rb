@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   before_save :sanitize_phone
-  normalizes :phone_number, with: -> phone { phone.delete("^0-9").delete_prefix("0") }
+  normalizes :phone_number, with: ->(phone) { phone.delete("^0-9").delete_prefix("0") }
 
   def self.authenticate!(username, password)
     user = User.find_by(email: username) || User.find_by(phone_number: username)
