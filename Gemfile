@@ -44,8 +44,8 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem 'rspec-rails', '~> 7.0.0'
-  gem 'dotenv'
+  gem "rspec-rails", "~> 7.0.0"
+  gem "dotenv"
 end
 
 gem "uuid7", "~> 0.2.0"
