@@ -36,7 +36,7 @@
 /config/environments/test.rb
 /config/database.yml
 /config/deploy.yml
-/log
 /script
 
 .idea
+.env
