@@ -1,3 +1,11 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_user!
+  include JSONAPI::ActsAsResourceController
+  before_action :doorkeeper_authorize!
+  # protect_from_forgery with: :exception, unless: -> { request.format.json? }
+
+  private
+
+  def valid_token?
+    doorkeeper_token&.accessible?
+  end
 end

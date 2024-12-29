@@ -126,6 +126,10 @@ GEM
       jsonapi-deserializable (~> 0.2.0)
       jsonapi-serializable (~> 0.3.0)
     jsonapi-renderer (0.2.2)
+    jsonapi-resources (0.10.7)
+      activerecord (>= 4.1)
+      concurrent-ruby
+      railties (>= 4.1)
     jsonapi-serializable (0.3.1)
       jsonapi-renderer (~> 0.2.0)
     jwt (2.9.3)
@@ -356,6 +360,7 @@ DEPENDENCIES
   doorkeeper-jwt
   dotenv
   jsonapi-rb
+  jsonapi-resources
   kamal
   pg (~> 1.1)
   puma (>= 5.0)
